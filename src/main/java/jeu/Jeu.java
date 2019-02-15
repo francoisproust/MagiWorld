@@ -21,13 +21,37 @@ public class Jeu {
 
     public void deroulementJeu(Personnage joueur1,Personnage joueur2){
         while(joueur1.getVie() >0 && joueur2.getVie() >0){
-            choixAttaque();
+            choixAttaque(joueur1.getClasse(), joueur1.getNumeroJoueur());
+            choixAttaque(joueur2.getClasse(),joueur2.getNumeroJoueur());
         }
     }
 
-    private void choixAttaque(){
-        
+    private void choixAttaque(String classe, int numeroJoueur){
+        int choixAttaque;
+        System.out.println("Joueur " + numeroJoueur + "(" + joueur1.getVie() + " vitalité ) veuillez choisir votre action (1 : Attaque Basique, 2 : Attaque Spéciale)");
+        choixAttaque = sc.nextInt();
+        if (numeroJoueur ==1){
+            lancerAttaqueJoueur1(choixAttaque);
+        }else {
+            lancerAttaqueJoueur2(choixAttaque);
+        }
     }
+    private void lancerAttaqueJoueur1(int choixAttaque){
+        if (choixAttaque == 1){
+            joueur1.attaqueBasique( joueur2);
+        }else {
+            joueur1.attaqueSpeciale(joueur2);
+        }
+    }
+
+    private void lancerAttaqueJoueur2(int choixAttaque){
+        if (choixAttaque == 1){
+            joueur2.attaqueBasique(joueur1);
+        }else {
+            joueur2.attaqueSpeciale(joueur1);
+        }
+    }
+
     /**
      * Méthode permettant la création d'un joueur
      * @param numeroJoueur

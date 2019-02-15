@@ -25,7 +25,11 @@ public class Guerrier extends Personnage {
 
     @Override
     public void attaqueBasique(Personnage personnage){
-
+        int dommage;
+        dommage = this.getForce();
+        System.out.println("Le joueur " + this.getNumeroJoueur() + " utilise Coup d'épée et inflige " + dommage);
+        personnage.setVie(personnage.getVie() - dommage);
+        System.out.println("Le joueur " + personnage.getNumeroJoueur() + " perd " + dommage);
     }
 
     @Override
