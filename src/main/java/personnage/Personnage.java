@@ -34,8 +34,16 @@ public abstract class Personnage {
      */
     public abstract String criDeGuerre();
 
+    /**
+     * Methode définissant l'attaque Basique
+     * @param personnage Classe du personnage
+     */
     public abstract void attaqueBasique(Personnage personnage);
 
+    /**
+     * Methode définissant l'attaque Spéciale
+     * @param personnage Classe du personnage
+     */
     public abstract void attaqueSpeciale(Personnage personnage);
 
     public int getNiveau() {

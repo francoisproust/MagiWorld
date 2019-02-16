@@ -18,12 +18,20 @@ public class Guerrier extends Personnage {
                 + intelligence + " d'intelligence !");
     }
 
+    /**
+     * Methode retournant le cri du personnage
+     * @return le cri du personnagge
+     */
     @Override
     public String criDeGuerre() {
 
         return "Woarg";
     }
 
+    /**
+     * Methode définissant l'attaque Basique
+     * @param personnage Classe du personnage
+     */
     @Override
     public void attaqueBasique(Personnage personnage){
         int dommage;
@@ -33,6 +41,10 @@ public class Guerrier extends Personnage {
         System.out.println("Le joueur " + personnage.getNumeroJoueur() + " perd " + dommage);
     }
 
+    /**
+     * Methode définissant l'attaque Spéciale
+     * @param personnage Classe du personnage
+     */
     @Override
     public void attaqueSpeciale(Personnage personnage){
         int dommage;

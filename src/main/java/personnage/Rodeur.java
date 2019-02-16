@@ -2,6 +2,15 @@ package personnage;
 
 public class Rodeur extends Personnage{
 
+    /**
+     * Méthode permettant la création d'un Rodeur
+     * @param niveau niveau du joueur
+     * @param force force du joueur
+     * @param agilite agilite du joueur
+     * @param intelligence intelligence du joueur
+     * @param numeroJoueur numero de joueur
+     * @param classe classe de personnage
+     */
     public Rodeur(int niveau, int force, int agilite, int intelligence, int numeroJoueur, String classe) {
         super(niveau, force, agilite, intelligence, numeroJoueur, classe);
         System.out.println(criDeGuerre() + " Je suis le Rôdeur" + " Joueur " + numeroJoueur + " de niveau "
@@ -10,11 +19,19 @@ public class Rodeur extends Personnage{
                 + intelligence + " d'intelligence !");
     }
 
+    /**
+     * Methode retournant le cri du personnage
+     * @return le cri du personnagge
+     */
     @Override
     public String criDeGuerre(){
         return "Bouuuhhhh";
     }
 
+    /**
+     * Methode définissant l'attaque Basique
+     * @param personnage Classe du personnage
+     */
     @Override
     public void attaqueBasique(Personnage personnage){
         int dommage;
@@ -24,6 +41,10 @@ public class Rodeur extends Personnage{
         System.out.println("Le joueur " + personnage.getNumeroJoueur() + " perd " + dommage);
     }
 
+    /**
+     * Methode définissant l'attaque Spéciale
+     * @param personnage Classe du personnage
+     */
     @Override
     public void attaqueSpeciale(Personnage personnage){
         int gain;

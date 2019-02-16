@@ -13,12 +13,20 @@ public class Jeu {
     private Personnage joueur2;
     Scanner sc = new Scanner(System.in);
 
+    /**
+     * Méthode créant les deux joueurs et lancant le jeu
+     */
     public Jeu(){
         joueur1 = creationJoueur(1);
         joueur2 = creationJoueur(2);
         deroulementJeu (joueur1,joueur2);
     }
 
+    /**
+     * Méthode Déroulant le jeu
+     * @param joueur1
+     * @param joueur2
+     */
     public void deroulementJeu(Personnage joueur1,Personnage joueur2){
         while(joueur1.getVie() >0 && joueur2.getVie() >0){
             choixAttaque(joueur1.getClasse(), joueur1.getNumeroJoueur());
@@ -31,6 +39,11 @@ public class Jeu {
         }
     }
 
+    /**
+     * Méthode demandant de choisir le type d'attaque
+     * @param classe du personnage
+     * @param numeroJoueur joueur1 ou joueur2
+     */
     private void choixAttaque(String classe, int numeroJoueur) {
         int choixAttaque;
         int vie;
@@ -47,6 +60,10 @@ public class Jeu {
         }
     }
 
+    /**
+     * Méthode permettant de lancer les attaques du joueur1
+     * @param choixAttaque
+     */
     private void lancerAttaqueJoueur1(int choixAttaque){
         if (choixAttaque == 1){
             joueur1.attaqueBasique( joueur2);
@@ -55,6 +72,10 @@ public class Jeu {
         }
     }
 
+    /**
+     * Méthode permettant de lancer les attaques du joueur2
+     * @param choixAttaque
+     */
     private void lancerAttaqueJoueur2(int choixAttaque){
         if (choixAttaque == 1){
             joueur2.attaqueBasique(joueur1);
