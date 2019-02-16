@@ -23,7 +23,7 @@ public abstract class Personnage {
         this.force = force;
         this.agilite = agilite;
         this.intelligence = intelligence;
-        this.vie = force * 5;
+        this.vie = niveau * 5;
         this.numeroJoueur = numeroJoueur;
         this.classe = classe;
     }
@@ -39,34 +39,42 @@ public abstract class Personnage {
     public abstract void attaqueSpeciale(Personnage personnage);
 
     public int getNiveau() {
+
         return niveau;
     }
 
     public void setNiveau(int niveau) {
+
         this.niveau = niveau;
     }
 
     public int getForce() {
+
         return force;
     }
 
     public void setForce(int force) {
+
         this.force = force;
     }
 
     public int getAgilite() {
+
         return agilite;
     }
 
     public void setAgilite(int agilite) {
+
         this.agilite = agilite;
     }
 
     public int getIntelligence() {
+
         return intelligence;
     }
 
     public void setIntelligence(int intelligence) {
+
         this.intelligence = intelligence;
     }
 
@@ -75,14 +83,17 @@ public abstract class Personnage {
     }
 
     public void setVie(int vie) {
+
         this.vie = vie;
     }
 
     public int getNumeroJoueur() {
+
         return numeroJoueur;
     }
 
     public void setNumeroJoueur(int numeroJoueur) {
+
         this.numeroJoueur = numeroJoueur;
     }
 

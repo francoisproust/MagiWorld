@@ -17,11 +17,18 @@ public class Rodeur extends Personnage{
 
     @Override
     public void attaqueBasique(Personnage personnage){
-
+        int dommage;
+        dommage = this.getAgilite();
+        System.out.println("Le joueur " + this.getNumeroJoueur() + " utilise Tir à l'arc et inflige " + dommage);
+        personnage.setVie(personnage.getVie() - dommage);
+        System.out.println("Le joueur " + personnage.getNumeroJoueur() + " perd " + dommage);
     }
 
     @Override
     public void attaqueSpeciale(Personnage personnage){
-
+        int gain;
+        gain = this.getNiveau() / 2;
+        this.setAgilite(this.getAgilite() + (this.getNiveau() / 2)) ;
+        System.out.println("Le joueur " + this.getNumeroJoueur() + " utilise Concentration et gagne " + gain + " en agilité");
     }
 }

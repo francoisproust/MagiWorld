@@ -24,11 +24,21 @@ public class Jeu {
             choixAttaque(joueur1.getClasse(), joueur1.getNumeroJoueur());
             choixAttaque(joueur2.getClasse(),joueur2.getNumeroJoueur());
         }
+        if (joueur1.getVie() == 0){
+            System.out.println("Joueur " + joueur1.getNumeroJoueur() + " a perdu");
+        }else{
+            System.out.println("Joueur " + joueur2.getNumeroJoueur() + " a perdu");
+        }
     }
 
-    private void choixAttaque(String classe, int numeroJoueur){
+    private void choixAttaque(String classe, int numeroJoueur) {
         int choixAttaque;
-        System.out.println("Joueur " + numeroJoueur + "(" + joueur1.getVie() + " vitalité ) veuillez choisir votre action (1 : Attaque Basique, 2 : Attaque Spéciale)");
+        int vie;
+        if (numeroJoueur == 1) {
+            vie = joueur1.getVie();
+        } else
+            vie = joueur2.getVie();
+        System.out.println("Joueur " + numeroJoueur + "(" + vie + " vitalité ) veuillez choisir votre action (1 : Attaque Basique, 2 : Attaque Spéciale)");
         choixAttaque = sc.nextInt();
         if (numeroJoueur ==1){
             lancerAttaqueJoueur1(choixAttaque);
@@ -36,6 +46,7 @@ public class Jeu {
             lancerAttaqueJoueur2(choixAttaque);
         }
     }
+
     private void lancerAttaqueJoueur1(int choixAttaque){
         if (choixAttaque == 1){
             joueur1.attaqueBasique( joueur2);

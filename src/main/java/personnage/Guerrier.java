@@ -20,6 +20,7 @@ public class Guerrier extends Personnage {
 
     @Override
     public String criDeGuerre() {
+
         return "Woarg";
     }
 
@@ -34,7 +35,12 @@ public class Guerrier extends Personnage {
 
     @Override
     public void attaqueSpeciale(Personnage personnage){
-
+        int dommage;
+        dommage = this.getForce() * 2 ;
+        System.out.println("Le joueur " + this.getNumeroJoueur() + " utilise Coup de Rage et inflige " + dommage);
+        personnage.setVie(personnage.getVie() - dommage);
+        this.setVie(this.getVie() - (this.getForce()/2));
+        System.out.println("Le joueur " + personnage.getNumeroJoueur() + " perd " + dommage);
     }
 
 }
