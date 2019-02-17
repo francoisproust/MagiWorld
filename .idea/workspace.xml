@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce420cd1-12fe-466c-9e74-ee492d4eb736" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jeu/Jeu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jeu/Jeu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/personnage/Guerrier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/personnage/Guerrier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/personnage/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/personnage/Mage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/personnage/Personnage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/personnage/Personnage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/personnage/Rodeur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/personnage/Rodeur.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -83,7 +77,17 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="MagiWorld" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="MagiWorld" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
@@ -520,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1550339915246</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Mise en place des tests pour les différentes attaques en fonction des classe de personnages.&#10;Développement des attaques des différentes classes de personnages">
+      <created>1550341091795</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1550341091795</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -568,14 +579,14 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32941177" />
-      <window_info active="true" anchor="right" id="Maven Projects" order="3" visible="true" weight="0.32956383" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.32956383" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32941177" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32941177" />
       <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32956383" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.5955882" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4985294" visible="true" weight="0.30371568" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4985294" visible="true" weight="0.22294022" />
       <window_info anchor="bottom" id="SonarQube" order="7" weight="0.32941177" />
       <window_info id="Structure" order="1" sideWeight="0.50147057" side_tool="true" weight="0.24959612" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
