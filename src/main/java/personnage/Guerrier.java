@@ -36,9 +36,9 @@ public class Guerrier extends Personnage {
     public void attaqueBasique(Personnage personnage){
         int dommage;
         dommage = this.getForce();
-        System.out.println("Le joueur " + this.getNumeroJoueur() + " utilise Coup d'épée et inflige " + dommage);
+        System.out.println("Le joueur " + this.getNumeroJoueur() + " utilise Coup d'épée et inflige " + dommage + " dommages");
         personnage.setVie(personnage.getVie() - dommage);
-        System.out.println("Le joueur " + personnage.getNumeroJoueur() + " perd " + dommage);
+        System.out.println("Le joueur " + personnage.getNumeroJoueur() + " perd " + dommage + " point de vie");
     }
 
     /**
@@ -48,11 +48,14 @@ public class Guerrier extends Personnage {
     @Override
     public void attaqueSpeciale(Personnage personnage){
         int dommage;
+        int pdv;
         dommage = this.getForce() * 2 ;
-        System.out.println("Le joueur " + this.getNumeroJoueur() + " utilise Coup de Rage et inflige " + dommage);
+        System.out.println("Le joueur " + this.getNumeroJoueur() + " utilise Coup de Rage et inflige " + dommage + " dommages");
         personnage.setVie(personnage.getVie() - dommage);
-        this.setVie(this.getVie() - (this.getForce()/2));
-        System.out.println("Le joueur " + personnage.getNumeroJoueur() + " perd " + dommage);
+        pdv = this.getForce()/2;
+        this.setVie(this.getVie() - pdv);
+        System.out.println("Le joueur " + personnage.getNumeroJoueur() + " perd " + dommage + " point de vie");
+        System.out.println("Le joueur " + this.getNumeroJoueur() + " perd " + pdv + " points de vie");
     }
 
 }

@@ -30,9 +30,14 @@ public class Jeu {
     public void deroulementJeu(Personnage joueur1,Personnage joueur2){
         while(joueur1.getVie() >0 && joueur2.getVie() >0){
             choixAttaque(joueur1.getClasse(), joueur1.getNumeroJoueur());
-            choixAttaque(joueur2.getClasse(),joueur2.getNumeroJoueur());
+            if(joueur2.getVie() > 0){
+                choixAttaque(joueur2.getClasse(),joueur2.getNumeroJoueur());
+            }else{
+                System.out.println("Joueur 2 est mort");
+            }
         }
         if (joueur1.getVie() == 0){
+            System.out.println("Joueur 1 est mort");
             System.out.println("Joueur " + joueur1.getNumeroJoueur() + " a perdu");
         }else{
             System.out.println("Joueur " + joueur2.getNumeroJoueur() + " a perdu");

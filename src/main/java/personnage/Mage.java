@@ -39,9 +39,9 @@ public class Mage extends Personnage{
     public void attaqueBasique(Personnage personnage){
         int dommage;
         dommage = this.getIntelligence();
-        System.out.println("Le joueur " + this.getNumeroJoueur() + " utilise Boule de feu et inflige " + dommage);
+        System.out.println("Le joueur " + this.getNumeroJoueur() + " utilise Boule de feu et inflige " + dommage + " dommages");
         personnage.setVie(personnage.getVie() - dommage);
-        System.out.println("Le joueur " + personnage.getNumeroJoueur() + " perd " + dommage);
+        System.out.println("Le joueur " + personnage.getNumeroJoueur() + " perd " + dommage + " point de vie");
     }
 
     /**
