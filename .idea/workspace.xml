@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce420cd1-12fe-466c-9e74-ee492d4eb736" name="Default" comment="">
+    <list default="true" id="ce420cd1-12fe-466c-9e74-ee492d4eb736" name="Default" comment="Correction classePersonnage&#10;ajout de la lecture clavier dans le switch">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MagiWorld.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MagiWorld.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jeu/Jeu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jeu/Jeu.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,7 +21,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/personnage/Guerrier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1120">
+            <state relative-caret-position="1067">
               <caret line="56" column="109" selection-start-line="56" selection-start-column="109" selection-end-line="56" selection-end-column="109" />
             </state>
           </provider>
@@ -31,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/personnage/Mage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="820">
-              <caret line="41" column="126" selection-start-line="41" selection-start-column="113" selection-end-line="41" selection-end-column="126" />
+            <state relative-caret-position="359">
+              <caret line="47" column="45" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -41,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
-              <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -58,29 +57,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/jeu/Jeu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="124" column="20" selection-start-line="124" selection-start-column="20" selection-end-line="124" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1520">
-              <caret line="76" column="10" selection-start-line="76" selection-start-column="10" selection-end-line="76" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/personnage/TestAtttaque.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+            <state relative-caret-position="-320">
+              <caret line="50" column="29" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,6 +77,9 @@
     </option>
   </component>
   <component name="FindInProjectRecents">
+    <findStrings>
+      <find>spli</find>
+    </findStrings>
     <replaceStrings>
       <replace />
     </replaceStrings>
@@ -120,7 +101,6 @@
         <option value="$PROJECT_DIR$/src/main/java/personnages/Joueur2.java" />
         <option value="$PROJECT_DIR$/src/main/java/personnages/Joueur1.java" />
         <option value="$PROJECT_DIR$/src/main/java/deroulement/Deroulement.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestAtttaque.java" />
         <option value="$PROJECT_DIR$/src/test/java/personnage/TestAtttaque.java" />
         <option value="$PROJECT_DIR$/src/test/java/jeu/JeuTest.java" />
@@ -128,8 +108,9 @@
         <option value="$PROJECT_DIR$/src/main/java/personnage/Mage.java" />
         <option value="$PROJECT_DIR$/src/main/java/personnage/Rodeur.java" />
         <option value="$PROJECT_DIR$/src/main/java/personnage/Guerrier.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jeu/Jeu.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jeu/Jeu.java" />
       </list>
     </option>
   </component>
@@ -262,13 +243,13 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550483639252" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550504655553" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -427,7 +408,7 @@
       <workItem from="1550162931365" duration="105000" />
       <workItem from="1550216622373" duration="8657000" />
       <workItem from="1550475655812" duration="6108000" />
-      <workItem from="1550492508141" duration="1836000" />
+      <workItem from="1550492508141" duration="7439000" />
     </task>
     <task id="LOCAL-00001" summary="ajout gitignore">
       <created>1550051591717</created>
@@ -464,7 +445,14 @@
       <option name="project" value="LOCAL" />
       <updated>1550483228894</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Correction classePersonnage&#10;ajout de la lecture clavier dans le switch">
+      <created>1550494435235</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1550494435235</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -500,7 +488,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16706000" />
+    <option name="totallyTimeSpent" value="22309000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="962" extended-state="6" />
@@ -515,14 +503,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.3060241" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.31566265" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="SonarQube" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.5955882" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.23975904" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5010661" side_tool="true" weight="0.30588236" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32941177" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32941177" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
@@ -548,7 +536,20 @@
     <MESSAGE value="Création des personnages" />
     <MESSAGE value="Mise en place des tests pour les différentes attaques en fonction des classe de personnages.&#10;Développement des attaques des différentes classes de personnages" />
     <MESSAGE value="Correction de la classe Jeu sur le séquencement.&#10;Correction sur les attaques (affichage)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correction de la classe Jeu sur le séquencement.&#10;Correction sur les attaques (affichage)" />
+    <MESSAGE value="Correction classePersonnage&#10;ajout de la lecture clavier dans le switch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correction classePersonnage&#10;ajout de la lecture clavier dans le switch" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
+          <line>5</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -682,34 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/personnage/Guerrier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1120">
-          <caret line="56" column="109" selection-start-line="56" selection-start-column="109" selection-end-line="56" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/personnage/Mage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="41" column="126" selection-start-line="41" selection-start-column="113" selection-end-line="41" selection-end-column="126" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/personnage/Rodeur.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="38" column="125" selection-start-line="38" selection-start-column="125" selection-end-line="38" selection-end-column="125" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/personnage/TestAtttaque.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
@@ -720,17 +693,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/personnage/Rodeur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="38" column="125" selection-start-line="38" selection-start-column="125" selection-end-line="38" selection-end-column="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/personnage/Mage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="47" column="45" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1520">
-          <caret line="76" column="10" selection-start-line="76" selection-start-column="10" selection-end-line="76" selection-end-column="10" />
+        <state relative-caret-position="1080">
+          <caret line="54" column="44" lean-forward="true" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/personnage/Guerrier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1067">
+          <caret line="56" column="109" selection-start-line="56" selection-start-column="109" selection-end-line="56" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jeu/Jeu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="124" column="20" selection-start-line="124" selection-start-column="20" selection-end-line="124" selection-end-column="20" />
+        <state relative-caret-position="-320">
+          <caret line="50" column="29" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

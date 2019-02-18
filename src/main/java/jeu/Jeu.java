@@ -32,14 +32,13 @@ public class Jeu {
             choixAttaque(joueur1.getClasse(), joueur1.getNumeroJoueur());
             if(joueur2.getVie() > 0){
                 choixAttaque(joueur2.getClasse(),joueur2.getNumeroJoueur());
-            }else{
-                System.out.println("Joueur 2 est mort");
             }
         }
         if (joueur1.getVie() == 0){
             System.out.println("Joueur 1 est mort");
             System.out.println("Joueur " + joueur1.getNumeroJoueur() + " a perdu");
         }else{
+            System.out.println("Joueur 2 est mort");
             System.out.println("Joueur " + joueur2.getNumeroJoueur() + " a perdu");
         }
     }
@@ -58,37 +57,32 @@ public class Jeu {
             vie = joueur2.getVie();
         System.out.println("Joueur " + numeroJoueur + "(" + vie + " vitalité ) veuillez choisir votre action (1 : Attaque Basique, 2 : Attaque Spéciale)");
         choixAttaque = sc.nextInt();
-        if (numeroJoueur ==1){
-            lancerAttaqueJoueur1(choixAttaque);
-        }else {
-            lancerAttaqueJoueur2(choixAttaque);
-        }
+        lancerAttaque(choixAttaque,numeroJoueur);
     }
 
     /**
-     * Méthode permettant de lancer les attaques du joueur1
-     * @param choixAttaque
+     * Méthode permettant de lancer l'attaque en fonction du joueur
+     * @param choixAttaque 1 ou 2
+     * @param numeroJoueur 1 ou 2
      */
-    private void lancerAttaqueJoueur1(int choixAttaque){
-        if (choixAttaque == 1){
-            joueur1.attaqueBasique( joueur2);
-        }else {
-            joueur1.attaqueSpeciale(joueur2);
+    private void lancerAttaque(int choixAttaque, int numeroJoueur){
+        switch (numeroJoueur){
+            case 1:
+                if (choixAttaque == 1){
+                    joueur1.attaqueBasique( joueur2);
+                }else {
+                    joueur1.attaqueSpeciale(joueur2);
+                }
+                break;
+            case 2:
+                if (choixAttaque == 1){
+                    joueur2.attaqueBasique(joueur1);
+                }else {
+                    joueur2.attaqueSpeciale(joueur1);
+                }
+                break;
         }
     }
-
-    /**
-     * Méthode permettant de lancer les attaques du joueur2
-     * @param choixAttaque
-     */
-    private void lancerAttaqueJoueur2(int choixAttaque){
-        if (choixAttaque == 1){
-            joueur2.attaqueBasique(joueur1);
-        }else {
-            joueur2.attaqueSpeciale(joueur1);
-        }
-    }
-
     /**
      * Méthode permettant la création d'un joueur
      * @param numeroJoueur
@@ -122,9 +116,10 @@ public class Jeu {
      * @return la classe de personnage
      */
     public String classePersonnage(){
-        int temp = 0;
+        int temp;
         String classe;
         System.out.println("Veuillez choisir la classe de votre personnage (1 : Guerrier , 2 : Rôdeur , 3 Mage )");
+        temp = sc.nextInt();
         while (temp != 1 && temp != 2 && temp != 3) {
             System.out.println("Le choix n'est pas dans la liste");
             temp = sc.nextInt();
