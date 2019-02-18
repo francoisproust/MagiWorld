@@ -122,12 +122,12 @@ public class Jeu {
      * @return la classe de personnage
      */
     public String classePersonnage(){
-        int temp;
+        int temp = 0;
         String classe;
         System.out.println("Veuillez choisir la classe de votre personnage (1 : Guerrier , 2 : Rôdeur , 3 Mage )");
-        temp = sc.nextInt();
         while (temp != 1 && temp != 2 && temp != 3) {
             System.out.println("Le choix n'est pas dans la liste");
+            temp = sc.nextInt();
         }
         switch (temp){
             case 1:
