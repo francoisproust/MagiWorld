@@ -151,16 +151,32 @@ public class Jeu {
         int intelligence;
         do {
             System.out.println("Niveau du personnage ?");
-            niveau = sc.nextInt();
+            niveau = recupererSaisieClavier(1,100);
             System.out.println("Force du personnage ?");
-            force = sc.nextInt();
+            force = recupererSaisieClavier(0,100);
             System.out.println("Agilité du personnage ?");
-            agilite = sc.nextInt();
+            agilite = recupererSaisieClavier(0,100);
             System.out.println("Intelligence du personnage ?");
-            intelligence = sc.nextInt();
+            intelligence = recupererSaisieClavier(0,100);
             if ((force + agilite + intelligence) != niveau)
                 System.out.println("Le niveau doit être égal à la somme de la force, de l'agilité et de l'intelligence");
         } while ((force + agilite + intelligence) != niveau);
         return niveau + " " + force + " " + agilite + " " + intelligence;
+    }
+
+    /**
+     * Méthode permettant de délimiter les valeurs sur les caractéristiques du personnage
+     * @param min
+     * @param max
+     * @return valeur saisie au clavier par le joueur
+     */
+    private int recupererSaisieClavier(int min, int max){
+        int valeur;
+        valeur = sc.nextInt() ;
+        while(valeur < min || valeur > max){
+            System.out.println("Vous devez saisir une valeur comprise entre" + min + " et " + max);
+            valeur = sc.nextInt() ;
+        }
+        return valeur;
     }
 }
