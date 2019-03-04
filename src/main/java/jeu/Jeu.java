@@ -56,7 +56,10 @@ public class Jeu {
         } else
             vie = joueur2.getVie();
         System.out.println("Joueur " + numeroJoueur + "(" + vie + " vitalité ) veuillez choisir votre action (1 : Attaque Basique, 2 : Attaque Spéciale)");
-        choixAttaque = sc.nextInt();
+        do{
+            choixAttaque = sc.nextInt();
+        }while(choixAttaque != 1 && choixAttaque != 2);
+
         lancerAttaque(choixAttaque,numeroJoueur);
     }
 
